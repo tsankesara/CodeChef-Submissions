@@ -1,4 +1,3 @@
-# 32760086	26 sec ago	chefteerth		0.05	87.1M	PYPY3
 # https://www.codechef.com/problems/PCJ18B
 # Problem Name: Chef and Bored Games
 # Problem Code: PCJ18B
