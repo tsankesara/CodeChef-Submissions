@@ -1,5 +1,8 @@
-
-#https://www.codechef.com/problems/LUCKFOUR
+# https://www.codechef.com/problems/LUCKFOUR
+# Problem Name: Lucky Four 
+# Problem Code: LUCKFOUR
+# Programming Lang: Python3
+#
 test = int(input())
 ans_list = []
 count =0
