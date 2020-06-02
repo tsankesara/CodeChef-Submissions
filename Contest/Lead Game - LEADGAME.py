@@ -26,4 +26,3 @@ if p1_res > p2_res:
     print(1 ,p1_res)
 else:
     print(2 ,p2_res)
-    pass
