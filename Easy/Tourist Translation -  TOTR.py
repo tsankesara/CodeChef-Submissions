@@ -5,7 +5,7 @@
 # Programming Lang: Python3
 english = "abcdefghijklmnopqrstuvwxyz"
 english = english + english.upper() + ".,!?"
-lenght = 52
+lenght = 56
 test, lang = input().split(" ")
 lang = lang + lang.upper() + ".,!?"
 test = int(test)
