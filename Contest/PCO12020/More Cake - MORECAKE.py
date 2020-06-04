@@ -19,10 +19,10 @@ while p < test:
         llist.append(new_val)
         i = i + 1
     if sum(llist) - TotalSlice <= 0:
-        poss = "POSSIBLE" + str(TotalSlice - sum(llist))
+        poss = "POSSIBLE" + ' ' + str(TotalSlice - sum(llist))
         ans_list.insert(p, poss)
     else:
-        poss = "IMPOSSIBLE" + str(abs(TotalSlice - sum(llist)))
+        poss = "IMPOSSIBLE" + ' ' + str(abs(TotalSlice - sum(llist)))
         ans_list.insert(p, poss)
     lst_sum.append(sum(llist))
     p = p+1
