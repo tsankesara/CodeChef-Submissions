@@ -1,3 +1,11 @@
+//Username: chefteerth ## https://www.codechef.com/users/chefteerth
+//Question URL: https://www.codechef.com/JUNE20B/problems/EOEO
+//Problem Name: The Tom and Jerry Game!
+// Problem Code: EOEO
+// Programming Lang: C++
+
+// SUBTASK 2 SOLVED! 
+
 #include<iostream>
 using namespace std;
 #define ll long long
