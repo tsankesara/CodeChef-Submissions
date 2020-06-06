@@ -4,10 +4,10 @@
 # Problem Code: CHFICRM
 # Programming Lang: Python3
 
-test = int(input())
+t = int(input())
 ans_lst = []
 
-while 0 < test:
+while 0 < t:
     N = int(input())
     Money =  list(map(int,input().strip().split()))
     curr_money = []
@@ -25,12 +25,16 @@ while 0 < test:
                 curr_money.pop(Five_index_lst[0])
                 curr_money.append(10)
         if Money[i] == 15:
-            Five_index_lst = [k for k in range(len(curr_money)) if curr_money[k] == 5]
             Ten_index_lst = [k for k in range(len(curr_money)) if curr_money[k] == 10]
-            if len(Five_index_lst) >= 1 and len(Ten_index_lst) >= 1:
-                curr_money.append(15)
-                curr_money.pop(Five_index_lst[0])
-                curr_money.pop(Ten_index_lst[0])
+            Five_index_lst = [k for k in range(len(curr_money)) if curr_money[k] == 5]
+            if len(Ten_index_lst) >= 1 or len(Five_index_lst) >= 2:
+                if len(Ten_index_lst) >=1:
+                    curr_money.append(15)
+                    curr_money.pop(Ten_index_lst[0])
+                else:
+                    curr_money.append(15)
+                    curr_money.pop(Five_index_lst[0])
+                    curr_money.pop(Five_index_lst[1])
             else: 
                 temp_ans.append('NO')
                 break
@@ -39,7 +43,7 @@ while 0 < test:
         ans_lst.append('YES')
     else:
         ans_lst.append('NO')
-    test = test -1
+    t = t -1
     
 for x in range(len(ans_lst)):
     print(ans_lst[x])
