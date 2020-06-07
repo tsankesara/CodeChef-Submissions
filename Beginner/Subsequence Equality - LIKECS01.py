@@ -1,3 +1,9 @@
+##Username: chefteerth ## https://www.codechef.com/users/chefteerth
+#Question URL: https://www.codechef.com/problems/LIKECS01
+# Problem Name: Subsequence Equality
+# Problem Code: LIKECS01
+# Programming Lang: Python3
+
 def check(string):
     lst = []
     for i in range(len(string)):
